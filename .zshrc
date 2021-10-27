@@ -48,6 +48,9 @@ alias cp="cp -v"
 alias rm="rm -I"
 alias mv="mv -iv"
 
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
 # Add custom directory to PATH
 export PATH="$HOME/.local/bin:$PATH"
 

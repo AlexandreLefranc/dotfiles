@@ -2,5 +2,9 @@
 
 echo "Syncing .zshrc..."
 rsync -v $HOME/.zshrc ./
-echo "Syncing .bashrc..."
+
+echo "\nSyncing .bashrc..."
 rsync -v $HOME/.bashrc ./
+
+echo "\nSyncing .vimrc..."
+rsync -v $HOME/.vimrc ./
