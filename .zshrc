@@ -38,6 +38,9 @@ source $ZSH/oh-my-zsh.sh
 # install gcc and clang
 alias gccc="gcc -Wall -Werror -Wextra"
 alias clangc="clang -Wall -Werror -Wextra"
+alias norminettec="norminette -R CheckForbiddenSourceHeader"
+alias norminetteh="norminette -R CheckDefine"
+crun() {clangc $@ && ./a.out && rm ./a.out}
 
 # install bat (batcat)
 command -v batcat > /dev/null && \
@@ -47,6 +50,7 @@ command -v batcat > /dev/null && \
 alias cp="cp -v"
 alias rm="rm -I"
 alias mv="mv -iv"
+alias o="xdg-open"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
