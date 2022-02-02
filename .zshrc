@@ -36,11 +36,13 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # install gcc and clang
-alias gccc="gcc -Wall -Werror -Wextra"
-alias clangc="clang -Wall -Werror -Wextra"
+alias gccc="gcc -Wall -Werror -Wextra -g3"
+alias clangc="clang -Wall -Werror -Wextra -g3"
 alias norminettec="norminette -R CheckForbiddenSourceHeader"
 alias norminetteh="norminette -R CheckDefine"
 crun() {clangc $@ && ./a.out && rm ./a.out}
+alias makec="make && make clean"
+alias valgrindl="valgrind --leak-check=full --show-leak-kinds=all"
 
 # install bat (batcat)
 command -v batcat > /dev/null && \
