@@ -54,6 +54,8 @@ alias rm="rm -I"
 alias mv="mv -iv"
 alias o="xdg-open"
 
+cheat() {curl cht.sh/$@}
+
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
