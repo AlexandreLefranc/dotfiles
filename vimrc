@@ -2,18 +2,18 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
-Plugin 'valloric/youcompleteme'
-Plugin 'tpope/vim-commentary'
+" Plugin 'valloric/youcompleteme'
+" Plugin 'tpope/vim-commentary'
 " Plugin 'xolox/vim-misc'
 " Plugin 'xolox/vim-easytags'
 
-call vundle#end()            " required
+" call vundle#end()            " required
 filetype plugin indent on    " required
 
 " 42 Header
@@ -42,6 +42,7 @@ set tabstop=4		" Number of spaces per Tab
 
 " Advanced
 set ruler			" Show row and column ruler information
+set colorcolumn=80	" Show vertical line at width 80
  
 set undolevels=1000				" Number of undo levels
 set backspace=indent,eol,start	" Backspace behaviour
@@ -62,3 +63,4 @@ set laststatus=2 " Show the status on the second to last line
 
 " SOURCES
 " https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/
+
